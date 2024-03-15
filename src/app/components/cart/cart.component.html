@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart</title>
+</head>
+<body>
+
+<div class="cart-container">
+  <h1>Cart</h1>
+  <div *ngFor="let item of cartservice.getItems(); trackBy: trackById" class="cart-item">
+    <h2>{{item.ProductName}}</h2>
+    <p>Quantity: {{ item.Quantity }}</p>
+    <button (click)="checkQuantityAndAlert(item)">Buy now</button>
+    <br><br>
+    <button (click)="deletefromcart(item)">Delete</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+

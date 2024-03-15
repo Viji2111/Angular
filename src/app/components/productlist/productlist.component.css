@@ -1,0 +1,44 @@
+:host {
+    display: block;
+    width: 100%;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px; 
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product h3 {
+    margin-top: 0;
+  }
+  
+  .product button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: cadetblue;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .product-container {
+        max-width: 50%;
+      justify-content: center;
+      text-align: center; 
+    }
+  }
+  

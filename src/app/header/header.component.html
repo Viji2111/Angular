@@ -1,0 +1,29 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-content">
+                    <div class="logo-container">
+                        <img src="https://e7.pngegg.com/pngimages/129/130/png-clipart-shopping-cart-computer-icons-online-shopping-online-shop-angle-text-thumbnail.png" alt="" class="logo">
+                    </div>
+                    <div class="desktop_menu">
+                        <div class="menu-icon" (click)="openmenu()">
+                            <i class={{menu_icon}}></i>
+                        </div>
+                        <ul>
+                            <li (click)="closemenu()">Home</li>
+                            <li (click)="closemenu()" routerLink="/post">About</li>
+                            <li (click)="closemenu()" routerLink="/add-product">Products</li>
+                            <li (click)="closemenu()" routerLink="/productlist">Orders</li>
+                            <li (click)="closemenu()" routerLink="/cart">Cart</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+

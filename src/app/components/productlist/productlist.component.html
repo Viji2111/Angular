@@ -1,0 +1,10 @@
+<div class = "product-container">
+<div *ngFor="let post of posts " >
+
+<div class="product">
+    {{ post.ProductName | json }}<br />
+<br />
+    <button (click)="Addtocart(post)">AddToCart</button>
+ </div> 
+</div>
+</div>

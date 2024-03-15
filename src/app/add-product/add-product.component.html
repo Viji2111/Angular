@@ -1,0 +1,25 @@
+<div class="add-product-container">
+    <form #productdetails="ngForm" (ngSubmit)="AddProduct(productdetails.value)" class="add-product-form">
+        <h2 class="form-heading">Add New Product</h2>
+
+        <div class="form-group">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" name="ProductName" ngModel id="productName" class="form-input">
+        </div>
+
+        <div class="form-group">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" name="Quantity" ngModel id="quantity" class="form-input">
+        </div>
+        
+        <button type="submit" class="submit-btn">Add Product</button>
+    </form>
+</div>
+
+
+
+  
+  
+
+
+  
